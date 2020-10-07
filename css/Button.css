@@ -1,0 +1,23 @@
+#topBtn{
+  background-color: rgb(235, 200, 5);
+  width: 100px;
+  height: 100px;
+  border: none;
+  display: none;
+  right: 20px;
+  bottom: 30px;
+  position: fixed;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: rgb(59, 2, 73);
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+}
+  
+#topBtn:hover{
+  background-color: rgb(255, 255, 255);
+  border: solid;
+  border-color: rgb(235, 200, 5);
+}

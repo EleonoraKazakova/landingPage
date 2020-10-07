@@ -1,6 +1,4 @@
 window.onscroll = () => {
-    showButton()
-    //showMenuBar()
-    focusElement()
-    
+  showButton()
+  focusElement()
 }

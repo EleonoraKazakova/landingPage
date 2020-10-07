@@ -1,29 +1,21 @@
-function menu(){
-    const elementList  = document.querySelectorAll('h1')
-    const item = document.createDocumentFragment()
-        
-    for(let el of elementList) {
-        const elementItem = document.createElement('p')
-        const elementLink = document.createElement('a')
+const menu = () => {
+  const elementList = document.querySelectorAll('h1')
+  const item = document.createDocumentFragment()
 
-        elementLink.addEventListener('click', (event) => {
-            event.preventDefault()
-            el.scrollIntoView({block: "center", behavior: "smooth"})
-        })
+  for (const el of elementList) {
+    const elementLink = document.createElement('a')
 
-        elementLink.textContent = el.innerText
-        elementLink.href = '#' + el.id
+    elementLink.addEventListener('click', (event) => {
+      event.preventDefault()
+      el.scrollIntoView({ block: 'start', behavior: 'smooth' })
+    })
 
-        elementItem.appendChild(elementLink)
-        item.appendChild(elementItem).classList.add('menuText')
-    }
+    elementLink.textContent = el.innerText
+    elementLink.href = `#${el.id}`
+    item.appendChild(elementLink)
+  }
 
-    document.getElementById('fixMenu').appendChild(item)
-   /* document.getElementById('menuBar').appendChild(item)*/
+  document.getElementById('sidebar').appendChild(item)
 }
 
-
-
 window.addEventListener('load', menu)
-
-
