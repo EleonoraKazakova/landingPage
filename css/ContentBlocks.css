@@ -1,27 +1,7 @@
-.sectionStyle{
-  padding: 20px;
-  display: flex;
-  }
-  
-.contentEleonora{
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 20px;
-  flex-wrap: wrap-reverse;
-  gap: 20px;
-  justify-content: center;
-}
-  
 .photoEleonora{
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   justify-content: center;
-}
-  
-.photoSize{
-  display: flex;
-  width: 100%;
-  max-width: 700px;
 }
 
 .contentFlex{
@@ -36,6 +16,8 @@
   display: flex;
   font-family: 'Oxygen', sans-serif;
   justify-content: center;
+  padding-bottom: 20px;
+  cursor: pointer;
 }
   
 #eleonora{
@@ -45,4 +27,9 @@
 #content{
   grid-area: ct;
   background-color: rgb(245, 242, 250);
+}
+
+.bgPhoto{
+  background-color: rgb(138, 8, 94);
+  color: aliceblue;
 }

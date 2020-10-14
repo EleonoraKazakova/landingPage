@@ -1,7 +1,7 @@
 @import './Button.css';
 @import './ContentBlocks.css';
 
-@media  (max-width: 1100px) {
+@media  (max-width: 280px) {
   .content{
     display: grid;
     grid-template-rows: 100px auto 100px;
@@ -11,6 +11,85 @@
     'ct'
     'ft';
   }
+
+  .contentEleonora{
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .sectionStyle{
+    padding: 20px 10px 40px 10px;
+    display: flex;
+    justify-content: center;
+    }
+
+  #sidebar{
+    background-color: rgb(48, 1, 48);
+    position: fixed;
+    width: 280px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5px 0;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  .text{
+    width: 300px;
+    word-wrap: break-all;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    display: block;
+  }
+
+  .menuText{
+    display: none;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  .textEleonora{
+    width: 300px;
+    word-wrap: break-all;
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+  }
+    
+  .photoSize{
+    display: flex;
+    width: 100%;
+    max-width: 290px;
+  }
+}
+
+@media  (min-width: 281px) and (max-width: 1100px) {
+  .content{
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    'bl'
+    'ct'
+    'ft';
+  }
+
+  .contentEleonora{
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .sectionStyle{
+    padding: 20px 10px 40px 10px;
+    display: flex;
+    justify-content: center;
+    }
 
   #sidebar{
     background-color: rgb(48, 1, 48);
@@ -30,6 +109,7 @@
     word-wrap: break-all;
     text-align: center;
     font-family: 'Oxygen', sans-serif;
+    display: block;
   }
 
   .menuText{
@@ -43,28 +123,73 @@
     font-family: 'Oxygen', sans-serif;
     text-align: center;
   }
+    
+  .photoSize{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+  }
 }
 
 @media  (min-width: 1100px) {
   .content{
     display: grid;
-    grid-template-rows:  100% 100px;
+    grid-template-rows:  100% 200px;
     grid-template-columns: 300px auto;
     grid-template-areas: 
     'sd ct'
     'ft ft';
   }
 
+  .contentEleonora{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    flex-wrap: wrap-reverse;
+    gap: 300px;
+    justify-content: flex-start
+  }
+
+  .sectionStyle{
+    padding: 70px 50px 100px 50px;
+    display: flex;
+    }
+
   .text{
     width: 500px;
     word-wrap: break-all;
     font-family: 'Oxygen', sans-serif;
+    display: block;
+    width: 100%;
+  }
+
+  .textCopenhagen{
+    width: 500px;
+    word-wrap: break-all;
+    font-family: 'Oxygen', sans-serif;
+    display: block;
+    width: 100%;
+  }
+
+  .blockCopengagen{
+    width: 500px;
+    word-wrap: break-all;
+    font-family: 'Oxygen', sans-serif;
+    display: block;
+    width: 100%;
+  }
+
+  .textPosition{
+    display: flex;
+    flex-direction: row;
   }
 
   .textEleonora{
     width: 100%;
     word-wrap: break-all;
     font-family: 'Oxygen', sans-serif;
+    text-align: center;
   }
 
   #sidebar{
@@ -80,9 +205,15 @@
     line-height: 40px;
     font-family: 'Oxygen', sans-serif;
   }
+    
+  .photoSize{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+  }
 }
 
-a{
+.link{
   color: rgb(255, 255, 255);
 }
 
@@ -98,6 +229,7 @@ a{
 #sidebarBackground{
   grid-area: sd;
   background-color: rgb(48, 1, 48);
+  
 }
 
 .menuText{
@@ -111,7 +243,7 @@ a{
 
 #footer{
   grid-area: ft;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(35, 1, 39);
 }
 
 body{
@@ -123,4 +255,10 @@ body{
   font-family: 'Oxygen', sans-serif;
   color: aliceblue;
   padding: 20px;
+}
+
+.activeBackground{
+  background-color: rgb(253, 251, 252);
+  opacity: 70%;
+  color: black;
 }

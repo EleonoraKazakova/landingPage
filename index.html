@@ -6,13 +6,13 @@
     <title>Eleonora Kazakova</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
     </style> 
   </head>
 
   <body>
-    <section id='sidebar' >
+    <section id='sidebar'  >
       <div class="menuText">Menu</div>
     </section>
 
@@ -21,63 +21,73 @@
       </section>
 
       <section  id='content'>
-        <div class="sectionStyle" >
+        <div class="sectionStyle bgPhoto" id='eleonora'>
           <div class="contentEleonora">
             <img src='photos/1.png' alt='Eleonora' class='photoEleonora'/>
-            <div id='eleonora'>
-              <h1 class="item" >Eleonora Kazakova</h1>
-              <p class="textEleonora">
-                Hello! My name is Eleonora Kazakova. I am happy to study at Udacity. I am truly passionate about coding. In
-                my spare time I like to travel.
-              </p>
+            <div >
+              <h1 class="item">Eleonora Kazakova</h1>
+              <div class="textEleonora">
+              <p>Hello! My name is Eleonora Kazakova.</p>
+              <p> I am happy to study at Udacity. </p>
+              <p>I am truly passionate about coding. </p>
+              <p>In my spare time I like to travel. </p>
+            </div>
             </div>
           </div>
         </div>
 
-        <div class="sectionStyle" >
+        <div class="sectionStyle" id='copenhagen'>
           <div class="contentFlex">
-            <img src='photos/copenhagen.JPG' alt='Copenhagen' class='photoSize'/>
-            <div>
-              <h1 class="item" id='copenhagen'>Copenhagen</h1>
-              <blockquote cite="https://en.wikipedia.org/wiki/Copenhagen">
-                <div class="text">
-                  Copenhagen is the capital and most populous city of Denmark.
+            <div >
+              <h1 class="item">Copenhagen</h1>
+              
+              <div class="text" id='textCopenhagen'>
+                <div class="textPosition">
+                  <img src='photos/copenhagen.JPG' alt='Copenhagen' class='photoSize'/>
+                  <blockquote cite="https://en.wikipedia.org/wiki/Copenhagen">
+                  <p>Copenhagen is the capital and most populous city of Denmark.</p>
+                  </blockquote>
                 </div>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="sectionStyle" >
-          <div class="contentFlex">
-            <img src='photos/munich.JPG' alt='Munich' class='photoSize'/>
-            <div>
-              <h1 class="item" id='munich'>Munich</h1>
-              <blockquote cite="https://en.wikipedia.org/wiki/Copenhagen">
-                <div class="text">
-                  Munich is the capital and most populous city of Bavaria, the second most populous German state.
-                </div>
-              </blockquote>
               </div>
-          </div>
-        </div>
-
-        <div class="sectionStyle" >
-          <div class="contentFlex">
-            <img src='photos/pompey.JPG' alt='Pompei' class='photoSize'/>
-            <div>
-              <h1 class="item" id='pompei'>Pompei</h1>
-              <blockquote cite="https://en.wikipedia.org/wiki/Copenhagen">
-                <div class="text">
-                  Pompei is a city and comune in the Metropolitan City of Naples in Italy, home of the ancient Roman ruins Pompeii that are part of the UNESCO World Heritage Sites. 
-                </div>
-              </blockquote>  
+              
             </div>
           </div>
         </div>
 
-        <div class="sectionStyle">
-          <p class="fontEleonora"> to be continued...</p>
+        <div class="sectionStyle" id='munich'>
+          <div class="contentFlex">
+            <div>
+              <h1 class="item">Munich</h1>
+              
+                <div class="text">
+                  <div class="textPosition">
+                  <img src='photos/munich.JPG' alt='Munich' class='photoSize'/>
+                  <blockquote cite="https://en.wikipedia.org/wiki/Munich">
+                  <p>Munich is the capital and most populous city of Bavaria, the second most populous German state.</p>
+                  </blockquote>
+                </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="sectionStyle" id='pompei'>
+          <div class="contentFlex">
+            <div>
+              <h1 class="item">Pompei</h1>
+
+              <div class="text">
+                <div class="textPosition">
+                  <img src='photos/pompey.JPG' alt='Pompei' class='photoSize'/>
+                  <blockquote cite="https://en.wikipedia.org/wiki/Pompei">
+                  <p>Pompei is a city and comune in the Metropolitan City of Naples in Italy, home of the ancient Roman ruins Pompeii that are part of the UNESCO World Heritage Sites. </p>
+                  </blockquote>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
         <div onclick="scrollToTop()" id='topBtn'>TOP</div>
@@ -89,17 +99,10 @@
       </footer>
 
     </div>
-
-      <!--</div>content1-->
-      
-
-    <!--</div>-->
-    
-    
+    <script src='js/collapse.js'></script>
     <script src='js/focus.js'></script>
     <script src='js/appButton.js'></script>
     <script src='js/menu.js'></script>
-    <script src='js/menuBar.js'></script>
     <script src='js/app.js'></script>
 
   </body>
