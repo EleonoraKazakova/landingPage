@@ -147,6 +147,88 @@
     flex-direction: row;
     padding-bottom: 20px;
     flex-wrap: wrap-reverse;
+    gap: 150px;
+    justify-content: flex-start
+  }
+
+  .sectionStyle{
+    padding: 70px 50px 100px 50px;
+    display: flex;
+    }
+
+  .text{
+    width: 500px;
+    word-wrap: break-all;
+    font-family: 'Oxygen', sans-serif;
+    display: block;
+    width: 100%;
+  }
+
+  .textCopenhagen{
+    width: 500px;
+    word-wrap: break-all;
+    font-family: 'Oxygen', sans-serif;
+    display: block;
+    width: 100%;
+  }
+
+  .blockCopengagen{
+    width: 500px;
+    word-wrap: break-all;
+    font-family: 'Oxygen', sans-serif;
+    display: block;
+    width: 100%;
+  }
+
+  .textPosition{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .textEleonora{
+    width: 100%;
+    word-wrap: break-all;
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+  }
+
+  #sidebar{
+    position: fixed;
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    top: 150px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 40px;
+    font-family: 'Oxygen', sans-serif;
+  }
+    
+  .photoSize{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+@media  (min-width: 1300px) {
+  .content{
+    display: grid;
+    grid-template-rows:  100% 200px;
+    grid-template-columns: 300px auto;
+    grid-template-areas: 
+    'sd ct'
+    'ft ft';
+  }
+
+  .contentEleonora{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    flex-wrap: wrap-reverse;
     gap: 300px;
     justify-content: flex-start
   }
